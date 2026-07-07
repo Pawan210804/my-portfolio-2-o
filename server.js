@@ -76,9 +76,9 @@ app.get(['/', '/index.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// For routing fallback to 404.html
+// For routing fallback
 app.get('*', (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, '404.html'));
+  res.status(404).send('404 Not Found');
 });
 
 app.listen(PORT, '0.0.0.0', () => {

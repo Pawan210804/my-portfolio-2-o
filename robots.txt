@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://pawan-rai.vercel.app/sitemap.xml
